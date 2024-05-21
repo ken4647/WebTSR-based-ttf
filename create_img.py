@@ -27,7 +27,7 @@ for i in range(3200):
     # 定义要添加的文字
     text_attr["text"] = "".join(random.sample(TXT_STR,random.randrange(1,20)))
     # 定义字体和大小
-    font_path = "ttf/NotoSansSC-VariableFont_wght.ttf"  # 这里需要指定一个中文字体的路径
+    font_path = "ttf/microsoftYaHei.ttf"  # 这里需要指定一个中文字体的路径
     font_size = random.randrange(8,96)
     text_attr["font"] = ImageFont.truetype(font_path, font_size)
     # 定义文字颜色为白色
