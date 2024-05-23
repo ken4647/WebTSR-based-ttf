@@ -8,7 +8,7 @@ import cv2
 from dataloader import CustomDataset
 from model import *
 
-BATCH_SIZE = 16384
+BATCH_SIZE = 4096
 EPOCH_NUM = 20
 WEIGHT_NAME = 'weight/resnet18_sr_x2.pth'
 image_path = 'data/data_lr_vari.jpg' 

@@ -10,7 +10,7 @@ class WebSr4Out(nn.Module):
         super(WebSr4Out, self).__init__()
         self.output_size = output_size
         
-        self.model = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+        self.model = models.resnet18(weights=None)
         self.model.conv1 = nn.Conv2d(1, 64, kernel_size=5, stride=1, padding=2, bias=False)
         num_ftrs = self.model.fc.in_features
         self.model.fc = nn.Linear(num_ftrs, output_size[0]*output_size[1])

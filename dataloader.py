@@ -9,7 +9,7 @@ Image.MAX_IMAGE_PIXELS = None
 
 # 定义数据集类
 class CustomDataset(Dataset):
-    def __init__(self, image_path, truth_path, window_size: tuple[int]=(13,13), stride: int=1):
+    def __init__(self, image_path, truth_path, window_size: tuple[int]=(27,27), stride: int=1):
         transform = transforms.Compose([
             transforms.ToTensor(),
             transforms.Pad((window_size[0]//2,window_size[1]//2,window_size[0]//2,window_size[1]//2),padding_mode='symmetric'),
